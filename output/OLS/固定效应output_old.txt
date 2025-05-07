@@ -1,0 +1,35 @@
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:            returns_new   R-squared:                        0.2250
+Estimator:                   PanelOLS   R-squared (Between):          -1.494e+30
+No. Observations:                 318   R-squared (Within):               0.2154
+Date:                Wed, May 07 2025   R-squared (Overall):              0.2149
+Time:                        15:36:09   Log-likelihood                   -229.97
+Cov. Estimator:            Unadjusted                                           
+                                        F-statistic:                      13.064
+Entities:                           5   P-value                           0.0000
+Avg Obs:                       63.600   Distribution:                   F(4,180)
+Min Obs:                       32.000                                           
+Max Obs:                       127.00   F-statistic (robust):             13.064
+                                        P-value                           0.0000
+Time periods:                     130   Distribution:                   F(4,180)
+Avg Obs:                       2.4462                                           
+Min Obs:                       1.0000                                           
+Max Obs:                       5.0000                                           
+                                                                                
+                                 Parameter Estimates                                 
+=====================================================================================
+                   Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+-------------------------------------------------------------------------------------
+const                 0.0197     0.0374     0.5274     0.5986     -0.0541      0.0936
+sentiment_index       0.2586     0.0529     4.8887     0.0000      0.1542      0.3630
+pe_new                0.4867     0.1372     3.5460     0.0005      0.2158      0.7575
+pb_new                0.4496     0.7017     0.6407     0.5225     -0.9350      1.8342
+turnover_rate_new     0.7541     0.4957     1.5213     0.1299     -0.2240      1.7322
+=====================================================================================
+
+F-test for Poolability: 2.4710
+P-value: 0.0000
+Distribution: F(133,180)
+
+Included effects: Entity, Time

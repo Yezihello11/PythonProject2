@@ -1,0 +1,96 @@
+对数收益率 OLS 回归结果:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:            returns_new   R-squared:                       0.913
+Model:                            OLS   Adj. R-squared:                  0.909
+Method:                 Least Squares   F-statistic:                     252.7
+Date:                Wed, 07 May 2025   Prob (F-statistic):           2.91e-62
+Time:                        15:14:28   Log-Likelihood:                -24.935
+No. Observations:                 127   AIC:                             61.87
+Df Residuals:                     121   BIC:                             78.94
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                -0.0479      0.032     -1.520      0.131      -0.110       0.014
+sentiment_index       0.0326      0.028      1.158      0.249      -0.023       0.088
+agreement_index     600.9462    220.748      2.722      0.007     163.917    1037.976
+pe_new                8.4995      0.507     16.772      0.000       7.496       9.503
+pb_new                9.9934      3.268      3.058      0.003       3.524      16.463
+turnover_rate_new     0.6888      0.305      2.256      0.026       0.084       1.293
+==============================================================================
+Omnibus:                       93.571   Durbin-Watson:                   1.937
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1372.662
+Skew:                           2.211   Prob(JB):                    8.51e-299
+Kurtosis:                      18.487   Cond. No.                     8.25e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 8.25e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+成交量一阶差分 OLS 回归结果:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    vol   R-squared:                       0.994
+Model:                            OLS   Adj. R-squared:                  0.994
+Method:                 Least Squares   F-statistic:                     4244.
+Date:                Wed, 07 May 2025   Prob (F-statistic):          4.45e-134
+Time:                        15:14:29   Log-Likelihood:                 316.51
+No. Observations:                 127   AIC:                            -621.0
+Df Residuals:                     121   BIC:                            -603.9
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                -0.0004      0.002     -0.179      0.859      -0.005       0.004
+sentiment_index       0.0019      0.002      0.996      0.321      -0.002       0.006
+agreement_index       9.2877     15.007      0.619      0.537     -20.423      38.998
+pe_new               -0.0940      0.034     -2.728      0.007      -0.162      -0.026
+pb_new                0.1807      0.222      0.813      0.418      -0.259       0.620
+turnover_rate_new     2.8770      0.021    138.634      0.000       2.836       2.918
+==============================================================================
+Omnibus:                       37.814   Durbin-Watson:                   2.478
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              414.488
+Skew:                          -0.517   Prob(JB):                     9.89e-91
+Kurtosis:                      11.790   Cond. No.                     8.25e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 8.25e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+波动率 OLS 回归结果:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         log_volatility   R-squared:                       0.353
+Model:                            OLS   Adj. R-squared:                  0.326
+Method:                 Least Squares   F-statistic:                     13.21
+Date:                Wed, 07 May 2025   Prob (F-statistic):           2.88e-10
+Time:                        15:14:29   Log-Likelihood:                -152.04
+No. Observations:                 127   AIC:                             316.1
+Df Residuals:                     121   BIC:                             333.2
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                 0.0203      0.086      0.237      0.813      -0.149       0.190
+sentiment_index       0.1749      0.077      2.286      0.024       0.023       0.326
+agreement_index    -424.7097    600.575     -0.707      0.481   -1613.706     764.286
+pe_new                1.3451      1.379      0.976      0.331      -1.385       4.075
+pb_new              -12.9349      8.891     -1.455      0.148     -30.536       4.666
+turnover_rate_new     6.1385      0.831      7.391      0.000       4.494       7.783
+==============================================================================
+Omnibus:                        0.738   Durbin-Watson:                   1.571
+Prob(Omnibus):                  0.691   Jarque-Bera (JB):                0.757
+Skew:                           0.179   Prob(JB):                        0.685
+Kurtosis:                       2.876   Cond. No.                     8.25e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 8.25e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
